@@ -1,0 +1,37 @@
+<html>
+<head>
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/pikaday/css/pikaday.css" />
+  <link rel="stylesheet" href="bower_components/handsontable/dist/handsontable.css" />
+  <!-- endbower -->
+
+  <style type="text/css">
+  .hide{ display: none; }
+  </style>
+</head>
+<body>
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/zeroclipboard/dist/ZeroClipboard.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="bower_components/pikaday/pikaday.js"></script>
+  <script src="bower_components/handsontable/dist/handsontable.js"></script>
+  <script src="bower_components/numeraljs/numeral.js"></script>
+  <!-- endbower -->
+
+  <button id="load" onClick="loadData(this)" target-data="load.json">Load</button>
+  <button id="load2" onClick="loadData(this)" target-data="load2.json">Load2</button>
+  <button id="save">Save</button>
+  <button id="delete">Delete</button>
+  <input id="autosave" type="checkbox"/> Autosave
+
+  <div id="loader"><img src="images/143.gif"/> Loading Data ...  </div>
+
+  <div id="example1console"></div>
+  <div id="example1"></div>
+  
+  <!-- localfile:start -->
+  <script src="scripts/main.js"></script>
+  <!-- localfile:end -->
+</body>
+</html>

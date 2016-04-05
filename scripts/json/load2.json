@@ -1,0 +1,44 @@
+{
+  "data" : [
+    {
+      "id": "1",
+      "car": "Mercedes",
+      "type": "A 160",
+      "date":"01/14/2012",
+      "price": 69998,
+      "color": "#FF0000"
+    },
+    { 
+      "id": "2",
+      "car": "Citroen",
+      "type":"C4 Coupe",
+      "date":"12/01/2013",
+      "price":83307,
+      "color": "#EFEFEF"
+    },
+    {
+      "id": "3",
+      "car": "Audi",
+      "type":"A4 Avant",
+      "date":"11/19/2014",
+      "price":339007,
+      "color": "#00FF1E"
+    },
+    {
+      "id": "4",
+      "car": "Opel",
+      "type":"Astra",
+      "date":"02/02/2015",
+      "price":70002,
+      "color": "#BAC011"
+    },
+    {
+      "id": "5",
+      "car": "BMW",
+      "type": "320i Coupe",
+      "date":"07/24/2016",
+      "price":305005,
+      "color": "#00BFFF"
+    }
+  ]
+}

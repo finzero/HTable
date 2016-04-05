@@ -1,0 +1,25 @@
+{
+  "name": "HTable",
+  "version": "1.0.0",
+  "description": "Example for HandsonTable",
+  "keywords": [
+    "handontable"
+  ],
+  "authors": [
+    "fazrin"
+  ],
+  "license": "MIT",
+  "homepage": "localhost/HTable",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "handsontable": "~0.22.0",
+    "numeraljs": "~1.5.3"
+  }
+}
