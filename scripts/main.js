@@ -51,8 +51,11 @@ var
         var totalArray = changes.length;
         console.log(totalArray, colPerRow);
         for(var c=0; c<totalArray; c+=6){
-          // console.log(c)
-          this.setDataAtCell(changes[c][0], 0, null, 'id');
+          if(changes[c][2] != null){
+            this.setDataAtCell(changes[c][0], 0, changes[c][2], 'id');
+          }else{
+            this.setDataAtCell(changes[c][0], 0, null, 'id');
+          }
         }
       }
     }
