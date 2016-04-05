@@ -46,10 +46,14 @@ var
       render_color(this);
     },
     afterChange: function(changes, source){
-      console.log('afterChange',changes);
-      console.log('sources',source);
       if(source == 'paste'){
-        this.setDataAtCell(changes[0][0], 0, null, 'id');
+        var colPerRow = 6;
+        var totalArray = changes.length;
+        console.log(totalArray, colPerRow);
+        for(var c=0; c<totalArray; c+=6){
+          // console.log(c)
+          this.setDataAtCell(changes[c][0], 0, null, 'id');
+        }
       }
     }
   });
@@ -80,7 +84,8 @@ var
         hot.loadData(data.data);
         hot.updateSettings({
           colHeaders: ['id', 'car', 'type', 'date','price','color'],
-          columnSorting : true
+          columnSorting : true,
+          minSpareRow: 2
         })
 	      exampleConsole.innerText = 'Data loaded';
 
